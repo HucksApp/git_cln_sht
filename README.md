@@ -72,7 +72,7 @@ commands                |                   Description
 ## Files 📄
 
 
-### add ➕📄
+### add 🗄➕📄
 commands                                           |                   Description
 ---------------------------------------------------|--------------------------------
 `git add [options]`              | Add files to stagin area in git
@@ -84,12 +84,14 @@ options =>       |       .................
 commands                                           |                   Description
 ---------------------------------------------------|--------------------------------
 `git status` | List which files are staged, unstaged, and untracked.Any pending commit, push, or pull
-## git stash
+## git stash 🗳
+commands                                           |                   Description
+---------------------------------------------------|--------------------------------
 `git stash `             | Saves the uncommitted changes locally.Move the changes in the working directory into a stash space. This allows you to save your changes for future use, without making a new commit.
 `git stash pop` | Recover the stashed changes.Move the changes from the stash back to the working directory
 
 
-### git log 📈 -> 📝
+### git log 📈 → 📝
 
 commands                                           |                   Description
 ---------------------------------------------------|--------------------------------
