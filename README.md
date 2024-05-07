@@ -28,7 +28,7 @@ commands                |                   Description
 `git remote set-url <name> <repo new url>` | updates the old connection <url> to the new one
 `git remote -v` | check remotes <origin> url for push and pull of current repository
 `git clone <remote>` | Copy a remote repository to your local directory
-### Pull and Fetch 📁💻 ⇠  ⇠ 🌐📁
+### pull and fetch 📁💻 ⇠  ⇠ 🌐📁
 commands                |                   Description
 ------------------------|--------------------------------
 `git fetch [<remote>] [<branch>]` | Fetches a specific <branch> or all remote refs
@@ -42,7 +42,7 @@ copy. Uses git rebase instead of merge to integrate the branches.
 `--no-rebase` | Fetch the remote’s copy of <branch> and merges it into the local
 copy.
 
-### Push 📁💻 ⇢  ⇢ 🌐📁
+### push 📁💻 ⇢  ⇢ 🌐📁
 commands                |                   Description
 ------------------------|--------------------------------
 `git push [-u, --set-upstream] [<remote>] [<branch>]` | sets the default remote branch for the current local branch and push the branch to remote
@@ -72,7 +72,7 @@ commands                |                   Description
 ## Files 📄
 
 
-### add 
+### add ➕📄
 commands                                           |                   Description
 ---------------------------------------------------|--------------------------------
 `git add [options]`              | Add files to stagin area in git
