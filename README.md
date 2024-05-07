@@ -45,8 +45,8 @@ commands                |                   Description
 `git rebase <branch name>` | Apply all the commits of the current branch ahead of the specified branch
 `git push origin --delete <branch name>` | Delete a remote branch
 
-
-
+---------------------------------
+-----------------------------
 ## Files
 
 commands                                           |                   Description
@@ -74,3 +74,8 @@ commands                                           |                   Descripti
 `--grep='<pattern>'`    | Search for commits with a commit message that matches <pattern>
 `<since>..<until>`     | Show commits that occur between <since> and <until>. Args can be a commit ID, branch name, HEAD, or any other kind of revision reference
 `-- <file>` | Only display commits that have the specified file
+
+------------------------------------
+-------------------------------------
+
+---------------------------
