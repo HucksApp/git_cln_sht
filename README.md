@@ -31,18 +31,26 @@ commands                |                   Description
 ### Pull and Fetch 📁💻 ⇠  ⇠ 🌐📁
 commands                |                   Description
 ------------------------|--------------------------------
-`git fetch <remote> [<branch>]` | Fetches a specific <branch> or all remote refs
-`git fetch [-u, --set-upstream] <remote>` | sets the default remote branch for the current local branch and fetches the branch from remote `-u or --set-upstream` sets  `branch.<name>.remote` and `branch.<name>.merge`
-`git pull <remote> [<branch>]` | Fetch the specified remote’s copy of <branch>  or current branch and immediately merge it into the local copy 
-`git pull [-u, --set-upstream] <remote>` | sets the default remote branch for the current local branch and pulls the branch from remote
+`git fetch [<remote>] [<branch>]` | Fetches a specific <branch> or all remote refs
+`git fetch [-u, --set-upstream] [<remote>]` | sets the default remote branch for the current local branch and fetches the branch from remote `-u or --set-upstream` sets  `branch.<name>.remote` and `branch.<name>.merge`
+`git pull [<remote>] [<branch>]` | Fetch the specified remote’s copy of <branch>  or current branch and immediately merge it into the local copy 
+`git pull [-u, --set-upstream] [<remote>]` | sets the default remote branch for the current local branch and pulls the branch from remote
+`git pull [<remote>] [<branch>] [options]` | Fetch the specified remote’s copy of <branch>  or current branch
+options =>           | ..............
+`--rebase` | Fetch the remote’s copy of  <branch> and rebases it into the local
+copy. Uses git rebase instead of merge to integrate the branches.
+`--no-rebase` | Fetch the remote’s copy of <branch> and merges it into the local
+copy.
 
 ### Push 📁💻 ⇢  ⇢ 🌐📁
 commands                |                   Description
 ------------------------|--------------------------------
-`git push [-u, --set-upstream] <remote> <branch>` | sets the default remote branch for the current local branch and push the branch to remote
-`git push <remote> <branch>` | Push the branch to <remote>, along with necessary commits and objects (snapshot)
-`git push <remote> --all` | Push all of your local branches to the specified remote
-`git push <remote> --tags` | Tags aren’t automatically pushed when you push a branch or use the --all flag. The --tags flag sends all of your local tags to the remote repo.
+`git push [-u, --set-upstream] [<remote>] [<branch>]` | sets the default remote branch for the current local branch and push the branch to remote
+`git push [<remote>] [<branch>] [option]` | Push the branch to <remote>, along with necessary commits and objects (snapshot)
+options =>           | ..............
+`--all` | Push all of your local branches to the specified remote
+`--tags` | Tags aren’t automatically pushed when you push a branch or use the --all flag. The --tags flag sends all of your local tags to the remote repo
+`--force` | Forces the git push even if it results in a ***non-fast-forward merge***
 
 ### branch ᛘ
 commands                |                   Description
@@ -63,12 +71,22 @@ commands                |                   Description
 ---------------------------------
 ## Files 📄
 
+
+### add 
 commands                                           |                   Description
 ---------------------------------------------------|--------------------------------
-`git add [.] [<file>]` | Add the specified file, changes to file or all files if `.` is used from the local directory to the staging area of GIT
-`git add -A`  | Add all changes from the local directory to the staging area of GIT
+`git add [options]`              | Add files to stagin area in git
+options =>       |       .................
+`[.] ` | Add all files or changes to files from the local directory to the staging area of GIT
+`[<file>]`        | Add the specified file or changes to file from the local directory to the staging area of GIT
+`-A`  | Add all changes from the local directory to the staging area of GIT
+
+commands                                           |                   Description
+---------------------------------------------------|--------------------------------
 `git status` | List which files are staged, unstaged, and untracked.Any pending commit, push, or pull
-`git stach`
+## git stash
+`git stash `             | Saves the uncommitted changes locally.Move the changes in the working directory into a stash space. This allows you to save your changes for future use, without making a new commit.
+`git stash pop` | Recover the stashed changes.Move the changes from the stash back to the working directory
 
 
 ### git log 📈 -> 📝
