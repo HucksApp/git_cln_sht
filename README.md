@@ -21,7 +21,7 @@ commands                |                   Description
 `git init [<directory>]` | create a local repository with a default branch in the directory passed or in present directory if dir name is not added
 `git remote add <name> <repo url>` | Create a new connection to a remote repo.
 `git fetch <remote> [<branch>]` | Fetches a specific <branch> or all remote refs
-`git pull <remote>` | Fetch the specified remote’s copy of current branch and immediately merge it into the local copy
+`git pull <remote> [<branch>]` | Fetch the specified remote’s copy of <branch>  or current branch and immediately merge it into the local copy 
 `git push -u <remote> <branch>` | sets the default remote branch for the current local branch and push the branch to remote
 `git push <remote> <branch>` | Push the branch to <remote>, along with necessary commits and objects (snapshot)
 `git push <remote> --all` | Push all of your local branches to the specified remote
