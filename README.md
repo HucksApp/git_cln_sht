@@ -37,8 +37,7 @@ commands                |                   Description
 `git pull [-u, --set-upstream] [<remote>]` | sets the default remote branch for the current local branch and pulls the branch from remote
 `git pull [<remote>] [<branch>] [options]` | Fetch the specified remote’s copy of <branch>  or current branch
 options =>           | ..............
-`--rebase` | Fetch the remote’s copy of  <branch> and rebases it into the local
-copy. Uses git rebase instead of merge to integrate the branches.
+`--rebase` | Fetch the remote’s copy of  <branch> and rebases it into the local copy. Uses git rebase instead of merge to integrate the branches.
 `--no-rebase` | Fetch the remote’s copy of <branch> and merges it into the local
 copy.
 
