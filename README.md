@@ -20,7 +20,7 @@ commands                |                   Description
 ------------------------|--------------------------------
 `git init [<directory>]` | create a local repository with a default branch in the directory passed or in present directory if dir name is not added
 
-### remote  🌐📁
+### git remote  🌐📁
 commands                |                   Description
 ------------------------|--------------------------------
 `git remote` | View all remote repositories
@@ -28,7 +28,7 @@ commands                |                   Description
 `git remote set-url <name> <repo new url>` | updates the old connection <url> to the new one
 `git remote -v` | check remotes <origin> url for push and pull of current repository
 `git clone <remote>` | Copy a remote repository to your local directory
-### pull and fetch 📁💻 ⇠  ⇠ 🌐📁
+### git pull and  git fetch 📁💻 ⇠  ⇠ 🌐📁
 commands                |                   Description
 ------------------------|--------------------------------
 `git fetch [<remote>] [<branch>]` | Fetches a specific <branch> or all remote refs
@@ -41,7 +41,7 @@ options =>           | ..............
 `--no-rebase` | Fetch the remote’s copy of <branch> and merges it into the local
 copy.
 
-### push 📁💻 ⇢  ⇢ 🌐📁
+### git push 📁💻 ⇢  ⇢ 🌐📁
 commands                |                   Description
 ------------------------|--------------------------------
 `git push [-u, --set-upstream] [<remote>] [<branch>]` | sets the default remote branch for the current local branch and push the branch to remote
@@ -51,7 +51,7 @@ options =>           | ..............
 `--tags` | Tags aren’t automatically pushed when you push a branch or use the --all flag. The --tags flag sends all of your local tags to the remote repo
 `--force` | Forces the git push even if it results in a ***non-fast-forward merge***
 
-### branch ᛘ
+### git branch ᛘ
 commands                |                   Description
 ------------------------|--------------------------------
 `git branch <branch name>` | creates a new branch.
@@ -71,7 +71,7 @@ commands                |                   Description
 ## Files 📄
 
 
-### add 🗄➕📄
+### git add 🗄➕📄
 commands                                           |                   Description
 ---------------------------------------------------|--------------------------------
 `git add [options]`              | Add files to stagin area in git
