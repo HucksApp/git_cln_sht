@@ -20,7 +20,7 @@ commands                |                   Description
 ------------------------|--------------------------------
 `git init [<directory>]` | create a local repository with a default branch in the directory passed or in present directory if dir name is not added
 
-### remote
+### remote  🌐📁
 commands                |                   Description
 ------------------------|--------------------------------
 `git remote` | View all remote repositories
@@ -28,16 +28,23 @@ commands                |                   Description
 `git remote set-url <name> <repo new url>` | updates the old connection <url> to the new one
 `git remote -v` | check remotes <origin> url for push and pull of current repository
 `git clone <remote>` | Copy a remote repository to your local directory
+### Pull and Fetch 📁💻 ⇠  ⇠ 🌐📁
+commands                |                   Description
+------------------------|--------------------------------
 `git fetch <remote> [<branch>]` | Fetches a specific <branch> or all remote refs
 `git fetch [-u, --set-upstream] <remote>` | sets the default remote branch for the current local branch and fetches the branch from remote `-u or --set-upstream` sets  `branch.<name>.remote` and `branch.<name>.merge`
 `git pull <remote> [<branch>]` | Fetch the specified remote’s copy of <branch>  or current branch and immediately merge it into the local copy 
 `git pull [-u, --set-upstream] <remote>` | sets the default remote branch for the current local branch and pulls the branch from remote
+
+### Push 📁💻 ⇢  ⇢ 🌐📁
+commands                |                   Description
+------------------------|--------------------------------
 `git push [-u, --set-upstream] <remote> <branch>` | sets the default remote branch for the current local branch and push the branch to remote
 `git push <remote> <branch>` | Push the branch to <remote>, along with necessary commits and objects (snapshot)
 `git push <remote> --all` | Push all of your local branches to the specified remote
 `git push <remote> --tags` | Tags aren’t automatically pushed when you push a branch or use the --all flag. The --tags flag sends all of your local tags to the remote repo.
 
-### branch
+### branch ᛘ
 commands                |                   Description
 ------------------------|--------------------------------
 `git branch <branch name>` | creates a new branch.
@@ -61,6 +68,7 @@ commands                                           |                   Descripti
 `git add [.] [<file>]` | Add the specified file, changes to file or all files if `.` is used from the local directory to the staging area of GIT
 `git add -A`  | Add all changes from the local directory to the staging area of GIT
 `git status` | List which files are staged, unstaged, and untracked.Any pending commit, push, or pull
+`git stach`
 
 
 ### git log 📈 -> 📝
