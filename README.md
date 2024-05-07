@@ -1,11 +1,11 @@
 # Git Clean Sheet
 
-### Key:
+### Key 🔑:
   variable ->  `<var>`
   
   optional variable -> `[<var>]`
 
-## USER
+## USER 👥
 commands                                      |                   Description
 ----------------------------------------------|--------------------------------
 `git config --global user.name <name>` | Define the author Username to be used for all commits by the current user
@@ -14,7 +14,7 @@ commands                                      |                   Description
 `git config --global alias. <alias-name> <git-command>` | Create shortcut or alias for a Git command
 `git config --global --edit` | Open the global configuration file in a text editor for manual editing
 
-## REPOSITORY
+## REPOSITORY 📁
 Repo `REMOTE URL` -> `https://<TOKEN>@github.com/<USERNAME>/<REPOSITORY NAME>.git`
 commands                |                   Description
 ------------------------|--------------------------------
@@ -47,7 +47,7 @@ commands                |                   Description
 
 ---------------------------------
 -----------------------------
-## Files
+## Files 📄
 
 commands                                           |                   Description
 ---------------------------------------------------|--------------------------------
@@ -56,7 +56,7 @@ commands                                           |                   Descripti
 `git status` | List which files are staged, unstaged, and untracked.Any pending commit, push, or pull
 
 
-### git log
+### git log 📈 -> 📝
 
 commands                                           |                   Description
 ---------------------------------------------------|--------------------------------
