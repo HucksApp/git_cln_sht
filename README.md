@@ -19,6 +19,10 @@ Repo `REMOTE URL` -> `https://<TOKEN>@github.com/<USERNAME>/<REPOSITORY NAME>.gi
 commands                |                   Description
 ------------------------|--------------------------------
 `git init [<directory>]` | create a local repository with a default branch in the directory passed or in present directory if dir name is not added
+
+### remote
+commands                |                   Description
+------------------------|--------------------------------
 `git remote` | View all remote repositories
 `git remote add <name> <repo url>` | Create a new connection to a remote repo.
 `git remote set-url <name> <repo new url>` | updates the old connection <url> to the new one
@@ -32,6 +36,10 @@ commands                |                   Description
 `git push <remote> <branch>` | Push the branch to <remote>, along with necessary commits and objects (snapshot)
 `git push <remote> --all` | Push all of your local branches to the specified remote
 `git push <remote> --tags` | Tags aren’t automatically pushed when you push a branch or use the --all flag. The --tags flag sends all of your local tags to the remote repo.
+
+### branch
+commands                |                   Description
+------------------------|--------------------------------
 `git branch <branch name>` | creates a new branch.
 ` git branch -u` | 
 `git branch [--list]` | View branches and their details
@@ -46,7 +54,6 @@ commands                |                   Description
 `git push origin --delete <branch name>` | Delete a remote branch
 
 ---------------------------------
------------------------------
 ## Files 📄
 
 commands                                           |                   Description
@@ -76,6 +83,3 @@ commands                                           |                   Descripti
 `-- <file>` | Only display commits that have the specified file
 
 ------------------------------------
--------------------------------------
-
----------------------------
