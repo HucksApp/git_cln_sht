@@ -66,11 +66,11 @@ commands                                           |                   Descripti
 `--oneline`               | Condense each commit to a single line.
 `--graph`                 | draws a text based graph of commits on left side of commit msgs.
 `--decorate`              |  adds names of branches or tags of commits shown.
-`--after="<Date YYYY-MM-DD>"` |  Only view commit logs after the specified date.
+`--after='<Date YYYY-MM-DD>'` |  Only view commit logs after the specified date.
 ` -<limit>`              | Limit number of commits by <limit>
 `-p`     | Display the full diff of each commit
 `--stat` | Include which files were altered and the relative number of lines that were added or deleted from each of them
 `--author='<pattern>'` | Search for commits by a particular author
-`--grep=”<pattern>”`    | Search for commits with a commit message that matches <pattern>
+`--grep='<pattern>'`    | Search for commits with a commit message that matches <pattern>
 `<since>..<until>`     | Show commits that occur between <since> and <until>. Args can be a commit ID, branch name, HEAD, or any other kind of revision reference
 `-- <file>` | Only display commits that have the specified file
