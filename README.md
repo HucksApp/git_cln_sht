@@ -19,6 +19,7 @@ Repo `REMOTE URL` -> `https://<TOKEN>@github.com/<USERNAME>/<REPOSITORY NAME>.gi
 commands                |                   Description
 ------------------------|--------------------------------
 `git init [<directory>]` | create a local repository with a default branch in the directory passed or in present directory if dir name is not added
+`git rebase -i <base>` | Interactively rebase current branch onto <base>, transfer completed work from one branch to another
 
 ### git remote  🌐📁
 commands                |                   Description
@@ -54,22 +55,32 @@ options =>           | ..............
 ### git branch ᛘ
 commands                |                   Description
 ------------------------|--------------------------------
-`git branch <branch name>` | creates a new branch.
-` git branch -u` | 
-`git branch [--list]` | View branches and their details
+`git branch [option]` | View branches in the repo
+options =>       |       .................
+`-r` |
+`--list` | View branches and their details
+`<branch name>` | creates a new branch.
+`–d <branch name>` | Delete the specified branch.
+`-m <old name> <new name>` | Rename a branch
+`-u` | sets the default remote branch for the current local branch
+`--set-upstream-to <remote-branch>` | sets the default remote branch for the current local branch
 `git checkout <branch name>` | Switch to a different branch
 `git checkout -b <New branch Name>` | create a local branch if it does not exist in the repository and Switch to it
-`git branch -m <old name> <new name>` | Rename a branch.
-`git branch --set-upstream-to <remote-branch>` | sets the default remote branch for the current local branch
 `git merge <branch name>` | Try to merge/ the current branch with the specified <branch>
 `git merge <source branch> <target branch> `| Merge the two given branches
-`git branch –d <branch name>` | Delete the specified branch.
 `git rebase <branch name>` | Apply all the commits of the current branch ahead of the specified branch
 `git push origin --delete <branch name>` | Delete a remote branch
 
 ---------------------------------
 ## Files 📄
 
+
+commands                                           |                   Description
+---------------------------------------------------|--------------------------------
+`git mv <old_file_name> <new_file_name>`      | Rename file
+`git diff [option]` | Show unstaged changes between your index and working directory
+options =>       |       .................
+`--staged` | see any staged changes
 
 ### git add 🗄➕📄
 commands                                           |                   Description
@@ -79,6 +90,7 @@ options =>       |       .................
 `[.] ` | Add all files or changes to files from the local directory to the staging area of GIT
 `[<file>]`        | Add the specified file or changes to file from the local directory to the staging area of GIT
 `-A`  | Add all changes from the local directory to the staging area of GIT
+`-p` | opens an interactive (prompt)
 
 commands                                           |                   Description
 ---------------------------------------------------|--------------------------------
@@ -88,6 +100,15 @@ commands                                           |                   Descripti
 ---------------------------------------------------|--------------------------------
 `git stash `             | Saves the uncommitted changes locally.Move the changes in the working directory into a stash space. This allows you to save your changes for future use, without making a new commit.
 `git stash pop` | Recover the stashed changes.Move the changes from the stash back to the working directory
+
+
+## git commit 🗄♽
+commands                                           |                   Description
+---------------------------------------------------|--------------------------------
+
+`git commit [options] -m "<message>"` | Commit the staged snapshot,use <message> as the commit message
+options => | ...........
+`-a` |  add and commit all tracked files
 
 
 ### git log 📈 → 📝
