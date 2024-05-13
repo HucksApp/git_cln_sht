@@ -66,7 +66,6 @@ commands                |                   Description
 ------------------------|--------------------------------
 `git branch [option]` | View branches in the repo
 options =>       |       .................
-`-r` |
 `--list` | View branches and their details
 `<branch name>` | creates a new branch.
 `–d <branch name>` | Delete the specified branch.
