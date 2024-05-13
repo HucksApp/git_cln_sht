@@ -112,6 +112,7 @@ options =>       |       .................
 `-A`  | Add all changes from the local directory to the staging area of GIT
 `-p` | opens an interactive (prompt)
 
+### git status 🗃📄 🔦
 commands                                           |                   Description
 ---------------------------------------------------|--------------------------------
 `git status` | List which files are staged, unstaged, and untracked.Any pending commit, push, or pull
