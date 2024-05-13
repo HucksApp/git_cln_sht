@@ -15,7 +15,7 @@ commands                                      |                   Description
 ----------------------------------------------|--------------------------------
 `git config --global user.name <name>` | Define the author Username to be used for all commits by the current user
 `git config --global user.email <email>` | Define the author email to be used for all commits by the current user
-`git config --system core.editor <editor>`| Set text editor used by commands for all users on the machine. <editor> arg should be the command that launches the desired editor (e.g vim)
+`git config --system core.editor <editor>`| Set text editor used by commands for all users on the machine. \<editor> arg should be the command that launches the desired editor (e.g vim)
 `git config --global alias. <alias-name> <git-command>` | Create shortcut or alias for a Git command
 `git config --global --edit` | Open the global configuration file in a text editor for manual editing
 
@@ -24,7 +24,7 @@ Repo `REMOTE URL` -> `https://<TOKEN>@github.com/<USERNAME>/<REPOSITORY NAME>.gi
 commands                |                   Description
 ------------------------|--------------------------------
 `git init [<directory>]` | create a local repository with a default branch in the directory passed or in present directory if dir name is not added
-`git rebase -i <base>` | *-i* Interactively rebase current branch onto <base>, transfer completed work from one branch to another
+`git rebase -i <base>` | *-i* Interactively rebase current branch onto \<base>, transfer completed work from one branch to another
 `git rebase <branch name>` | Apply all the commits of the current branch ahead of the specified branch
 
 ### git remote  🌐📁
@@ -34,7 +34,7 @@ commands                |                   Description
 options =>           | ..............
 `add <name> <repo url>` | Create a new connection to a remote repo.
 `set-url <name> <repo new url>` | updates the old connection <url> to the new one
-`-v` | check remotes <origin> url for push and pull of current repository
+`-v` | check remotes \<origin> url for push and pull of current repository
 `git clone <remote>` | Copy a remote repository to your local directory
 
 
@@ -44,18 +44,18 @@ commands                |                   Description
 `git fetch [<option>]` | fetches a remote repo ***\<origin>*** if remote *url <origin>*  is set
 `git pull [<option>]` |  pulls a remote repo ***\<origin>*** if remote *url <origin>*  is set
 options =>           | ..............
-`<remote> <branch>` | Fetches or pulls a specific \<branch> or all remote refs <branches>
+`<remote> <branch>` | Fetches or pulls a specific \<branch> or all remote refs \<branches>
 ` [-u, --set-upstream] <remote>` | sets the default remote branch for the current local branch and fetches the branch from remote `-u or --set-upstream` sets  `branch.<name>.remote` and `branch.<name>.merge`
-`--rebase` | Fetch or pull the remote’s copy of  <branch> and rebases it into the local copy. Uses git rebase instead of merge to integrate the branches.
-`--no-rebase` | Fetch or pull the remote’s copy of <branch> and merges it into the local copy
+`--rebase` | Fetch or pull the remote’s copy of  \<branch> and rebases it into the local copy. Uses git rebase instead of merge to integrate the branches.
+`--no-rebase` | Fetch or pull the remote’s copy of \<branch> and merges it into the local copy
 
 ### git push 📁💻 ⇢  ⇢ 🌐📁
 commands                |                   Description
 ------------------------|--------------------------------
-`git push [options]` | push local branch to remote ***<origin>**
+`git push [options]` | push local branch to remote ***\<origin>**
 options =>           | ..............
 `[-u, --set-upstream] <remote> <branch>` | sets the default remote branch for the current local branch and push the branch to remote
-` <remote> <branch> ` | Push the specified branch to <remote>, along with necessary commits and objects (snapshot)
+` <remote> <branch> ` | Push the specified branch to \<remote>, along with necessary commits and objects (snapshot)
 `--all `, `-a` | Push all of your local branches to the specified remote
 `--tags` | Tags aren’t automatically pushed when you push a branch or use the --all flag. The --tags flag sends all of your local tags to the remote repo
 `--force`, `-f` | Forces the git push even if it results in a ***non-fast-forward merge***
@@ -82,7 +82,7 @@ commands                |                   Description
 `git merge <[options]>` | Try to merge branches
 options =>       |       .................
 ` --abort`    | throw current merge away and start over
-`<branch name>` | Try to merge/ the current branch with the specified <branch>
+`<branch name>` | Try to merge/ the current branch with the specified \<branch>
 `<source branch> <target branch> `| Merge the two given branches
 
 
@@ -128,7 +128,7 @@ commands                                           |                   Descripti
 ---------------------------------------------------|--------------------------------
 `git commit [options] ` | Commit the staged snapshot
 options =>                            | ...........
-`-m "<message>"`           | use <message> as the commit message
+`-m "<message>"`           | use \<message> as the commit message
 `-a`                       |  add and commit all tracked files
 `--amend`        | modify the most recent commit. Combine staged changes with the previous commit instead of creating an entirely new commit
 
@@ -162,12 +162,12 @@ options =>              | ..............
 `--graph`                 | draws a text based graph of commits on left side of commit msgs.
 `--decorate`              |  adds names of branches or tags of commits shown.
 `--after='<Date YYYY-MM-DD>'` |  Only view commit logs after the specified date.
-` -<limit>`              | Limit number of commits by <limit>
+` -<limit>`              | Limit number of commits by \<limit>
 `-p`     | Display the full diff of each commit
 `--stat` | Include which files were altered and the relative number of lines that were added or deleted from each of them
 `--author='<pattern>'` | Search for commits by a particular author
-`--grep='<pattern>'`    | Search for commits with a commit message that matches <pattern>
-`<since>..<until>`     | Show commits that occur between <since> and <until>. Args can be a commit ID, branch name, HEAD, or any other kind of revision reference
+`--grep='<pattern>'`    | Search for commits with a commit message that matches \<pattern>
+`<since>..<until>`     | Show commits that occur between \<since> and \<until>. Args can be a commit ID, branch name, HEAD, or any other kind of revision reference
 `-- <file>` | Only display commits that have the specified file
 
 ## UNDOING
@@ -177,7 +177,7 @@ commands                                           |                   Descripti
 ---------------------------------------------------|--------------------------------
 `git rm [option]` | Remove/untrack a file or directory from  working tree
 options =>       |       .................
-`<file>`     | remove tracked *<file>*
+`<file>`     | remove tracked *\<file>*
 `-r`         | recursively removes files and folders
 `--dry-run` | Just show files and folder that will be remove but dont remove any
 `-f` | forcesfully remove dir or files
@@ -194,15 +194,15 @@ options =>       |       .................
 ### git reset 🔃
 commands                                           |                   Description
 ---------------------------------------------------|--------------------------------
-`git reset [option]` | reset or remove specified options such as <file> from staging area
+`git reset [option]` | reset or remove specified options such as \<file> from staging area
 `options` =>              | ..............
-`--hard <commit_id>` | Permanently revert back to a previous commit *<commit_id>*
+`--hard <commit_id>` | Permanently revert back to a previous commit *\<commit_id>*
 `HEAD~<n>` | Permanently revert the nth commit. where n is number of commit starting from last commit.
 
 ### git revert ⏮
 commands                                           |                   Description
 ---------------------------------------------------|--------------------------------
-`git revert <commit id>` | Create new commit that undoes all of the changes made in *<commit_id>*, then apply it to the current branch
+`git revert <commit id>` | Create new commit that undoes all of the changes made in *\<commit_id>*, then apply it to the current branch
 
 
 
