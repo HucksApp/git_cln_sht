@@ -3,10 +3,10 @@
 ![git](https://github.com/HucksApp/git_cln_sht/assets/58187974/1c5cea11-dca0-44a3-97f0-b2e77efa1146)
 
 
-### Key 🔑:
+### Key 🔑
   variable ->  `<var>`
-  
   optional variable -> `[<var>]`
+
 
 ## USER 👥
 commands                                      |                   Description
@@ -108,10 +108,21 @@ commands                                           |                   Descripti
 ## git commit 🗄♽
 commands                                           |                   Description
 ---------------------------------------------------|--------------------------------
+`git commit [options] ` | Commit the staged snapshot
+options =>                            | ...........
+`-m "<message>"`           | use <message> as the commit message
+`-a`                       |  add and commit all tracked files
+`--amend`        | modify the most recent commit. Combine staged changes with the previous commit instead of creating an entirely new commit
 
-`git commit [options] -m "<message>"` | Commit the staged snapshot,use <message> as the commit message
-options => | ...........
-`-a` |  add and commit all tracked files
+
+## git reflog 🗄𝞭
+
+commands                                           |                   Description
+---------------------------------------------------|--------------------------------
+`git reflog  [options]`    |  Show a log of changes to the local repository’s ***HEAD***
+options =>                            | ...........
+`--relative-date`        |  show date info
+`--all`             | show all refs
 
 
 ### git log 📈 → 📝
