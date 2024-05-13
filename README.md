@@ -4,8 +4,10 @@
 
 
 ### Key 🔑
-  variable ->  `<var>`
-  optional variable -> `[<var>]`
+
+variable ->  `<var>`
+  
+optional variable -> `[<var>]`
 
 
 ## USER 👥
