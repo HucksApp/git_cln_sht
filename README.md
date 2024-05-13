@@ -52,7 +52,7 @@ options =>           | ..............
 ### git push 📁💻 ⇢  ⇢ 🌐📁
 commands                |                   Description
 ------------------------|--------------------------------
-`git push [options]` | push local branch to remote ***\<origin>**
+`git push [options]` | push local branch to remote ***\<origin>***
 options =>           | ..............
 `[-u, --set-upstream] <remote> <branch>` | sets the default remote branch for the current local branch and push the branch to remote
 ` <remote> <branch> ` | Push the specified branch to \<remote>, along with necessary commits and objects (snapshot)
