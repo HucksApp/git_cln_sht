@@ -56,7 +56,6 @@ commands                |                   Description
 options =>           | ..............
 `[-u, --set-upstream] <remote> <branch>` | sets the default remote branch for the current local branch and push the branch to remote
 ` <remote> <branch> ` | Push the specified branch to <remote>, along with necessary commits and objects (snapshot)
-
 `--all `, `-a` | Push all of your local branches to the specified remote
 `--tags` | Tags aren’t automatically pushed when you push a branch or use the --all flag. The --tags flag sends all of your local tags to the remote repo
 `--force`, `-f` | Forces the git push even if it results in a ***non-fast-forward merge***
