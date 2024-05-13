@@ -41,10 +41,10 @@ options =>           | ..............
 ### git pull and  git fetch 📁💻 ⇠  ⇠ 🌐📁
 commands                |                   Description
 ------------------------|--------------------------------
-`git fetch [<option>]` | fetches a remote repo ***<origin>** if remote *url <origin>*  is set
-`git pull [<option>]` |  pulls a remote repo ***<origin>** if remote *url <origin>*  is set
+`git fetch [<option>]` | fetches a remote repo ***\<origin>*** if remote *url <origin>*  is set
+`git pull [<option>]` |  pulls a remote repo ***\<origin>*** if remote *url <origin>*  is set
 options =>           | ..............
-`<remote> <branch>` | Fetches or pulls a specific <branch> or all remote refs <branches>
+`<remote> <branch>` | Fetches or pulls a specific \<branch> or all remote refs <branches>
 ` [-u, --set-upstream] <remote>` | sets the default remote branch for the current local branch and fetches the branch from remote `-u or --set-upstream` sets  `branch.<name>.remote` and `branch.<name>.merge`
 `--rebase` | Fetch or pull the remote’s copy of  <branch> and rebases it into the local copy. Uses git rebase instead of merge to integrate the branches.
 `--no-rebase` | Fetch or pull the remote’s copy of <branch> and merges it into the local copy
