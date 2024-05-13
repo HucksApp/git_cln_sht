@@ -94,14 +94,6 @@ commands                                           |                   Descripti
 ---------------------------------------------------|--------------------------------
 `git mv <old_file_name> <new_file_name>`      | Rename file
 
-### git rm 🚮
-commands                                           |                   Description
----------------------------------------------------|--------------------------------
-`git rm [option]` | remove tracked file or files from working tree (set files to untracked)
-options =>       |       .................
-`<file>`     | remove tracked *<file>*
-`-r`         | recursively removes files and folders
-`--dry-run` | Just show files and folder that will be remove but dont remove any
 
  ### git diff 🗄δ ／ 📄δ
 commands                                           |                   Description
@@ -124,7 +116,7 @@ options =>       |       .................
 commands                                           |                   Description
 ---------------------------------------------------|--------------------------------
 `git status` | List which files are staged, unstaged, and untracked.Any pending commit, push, or pull
-## git stash 🗳
+### git stash 🗳
 commands                                           |                   Description
 ---------------------------------------------------|--------------------------------
 `git stash `             | Saves the uncommitted changes locally.Move the changes in the working directory into a stash space. This allows you to save your changes for future use, without making a new commit.
@@ -139,6 +131,7 @@ options =>                            | ...........
 `-m "<message>"`           | use <message> as the commit message
 `-a`                       |  add and commit all tracked files
 `--amend`        | modify the most recent commit. Combine staged changes with the previous commit instead of creating an entirely new commit
+
 
 ## git show  📖 🔦
 commands                                           |                   Description
@@ -163,7 +156,7 @@ options =>                            | ...........
 commands                                           |                   Description
 ---------------------------------------------------|--------------------------------
 `git log  [options]`                 | View a list of all the commits made to a repository
-`options` =>              | ..............
+options =>              | ..............
 `--summary`               | View a detailed log of all the commits made to a repository
 `--oneline`               | Condense each commit to a single line.
 `--graph`                 | draws a text based graph of commits on left side of commit msgs.
@@ -176,5 +169,44 @@ commands                                           |                   Descripti
 `--grep='<pattern>'`    | Search for commits with a commit message that matches <pattern>
 `<since>..<until>`     | Show commits that occur between <since> and <until>. Args can be a commit ID, branch name, HEAD, or any other kind of revision reference
 `-- <file>` | Only display commits that have the specified file
+
+## UNDOING
+
+### git rm 🚮
+commands                                           |                   Description
+---------------------------------------------------|--------------------------------
+`git rm [option]` | Remove/untrack a file or directory from  working tree
+options =>       |       .................
+`<file>`     | remove tracked *<file>*
+`-r`         | recursively removes files and folders
+`--dry-run` | Just show files and folder that will be remove but dont remove any
+`-f` | forcesfully remove dir or files
+
+### git clean 🧽🫧🧼
+commands                                           |                   Description
+---------------------------------------------------|--------------------------------
+`git clean [options]`  | Remove untracked files from the working directory
+options =>       |       .................
+`-n` |  Just show files and folder that will be remove but dont remove any
+`-f` |  forcesfully delete untracked files
+`-d` |  forcesfully delete untracked directories
+
+### git reset 🔃
+commands                                           |                   Description
+---------------------------------------------------|--------------------------------
+`git reset [option]` | reset or remove specified options such as <file> from staging area
+`options` =>              | ..............
+`--hard <commit_id>` | Permanently revert back to a previous commit *<commit_id>*
+`HEAD~<n>` | Permanently revert the nth commit. where n is number of commit starting from last commit.
+
+### git revert ⏮
+commands                                           |                   Description
+---------------------------------------------------|--------------------------------
+`git revert <commit id>` | Create new commit that undoes all of the changes made in *<commit_id>*, then apply it to the current branch
+
+
+
+
+
 
 ------------------------------------
