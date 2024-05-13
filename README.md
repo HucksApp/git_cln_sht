@@ -62,7 +62,7 @@ options =>           | ..............
 `--force`, `-f` | Forces the git push even if it results in a ***non-fast-forward merge***
 ` <remote> --delete <branch name>` | Delete a remote branch
 
-### git branch ᛘ
+### git branch ⑂
 commands                |                   Description
 ------------------------|--------------------------------
 `git branch [option]` | View branches in the repo
@@ -77,7 +77,7 @@ options =>       |       .................
 `git checkout <branch name>` | Switch to a different branch
 `git checkout -b <New branch Name>` | create a local branch if it does not exist in the repository and Switch to it
 
-### git merge
+### git merge ⑃
 commands                |                   Description
 ------------------------|--------------------------------
 `git merge <[options]>` | Try to merge branches
@@ -95,7 +95,7 @@ commands                                           |                   Descripti
 ---------------------------------------------------|--------------------------------
 `git mv <old_file_name> <new_file_name>`      | Rename file
 
-### git rm 
+### git rm 🚮
 commands                                           |                   Description
 ---------------------------------------------------|--------------------------------
 `git rm [option]` | remove tracked file or files from working tree (set files to untracked)
@@ -141,13 +141,13 @@ options =>                            | ...........
 `-a`                       |  add and commit all tracked files
 `--amend`        | modify the most recent commit. Combine staged changes with the previous commit instead of creating an entirely new commit
 
-## git show
+## git show  📖 🔦
 commands                                           |                   Description
 ---------------------------------------------------|--------------------------------
 `git show <[options]>` | show details of passed option
 options =>                            | ...........
-`<commit_id>`    |  shows Details of a specific commit
-`<origin>` | 
+`<commit_id>`    |  shows details of a specific commit
+`<origin>` |  show details of the remote repository
 
 ## git reflog 🗄δ
 
