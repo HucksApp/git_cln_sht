@@ -1,5 +1,8 @@
 # Git Clean Sheet
 
+![git](https://github.com/HucksApp/git_cln_sht/assets/58187974/1c5cea11-dca0-44a3-97f0-b2e77efa1146)
+
+
 ### Key 🔑:
   variable ->  `<var>`
   
