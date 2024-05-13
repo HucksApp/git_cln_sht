@@ -22,38 +22,43 @@ Repo `REMOTE URL` -> `https://<TOKEN>@github.com/<USERNAME>/<REPOSITORY NAME>.gi
 commands                |                   Description
 ------------------------|--------------------------------
 `git init [<directory>]` | create a local repository with a default branch in the directory passed or in present directory if dir name is not added
-`git rebase -i <base>` | Interactively rebase current branch onto <base>, transfer completed work from one branch to another
+`git rebase -i <base>` | *-i* Interactively rebase current branch onto <base>, transfer completed work from one branch to another
+`git rebase <branch name>` | Apply all the commits of the current branch ahead of the specified branch
 
 ### git remote  🌐📁
 commands                |                   Description
 ------------------------|--------------------------------
-`git remote` | View all remote repositories
-`git remote add <name> <repo url>` | Create a new connection to a remote repo.
-`git remote set-url <name> <repo new url>` | updates the old connection <url> to the new one
-`git remote -v` | check remotes <origin> url for push and pull of current repository
+`git remote [options]` | View all remote repositories
+options =>           | ..............
+`add <name> <repo url>` | Create a new connection to a remote repo.
+`set-url <name> <repo new url>` | updates the old connection <url> to the new one
+`-v` | check remotes <origin> url for push and pull of current repository
 `git clone <remote>` | Copy a remote repository to your local directory
+
+
 ### git pull and  git fetch 📁💻 ⇠  ⇠ 🌐📁
 commands                |                   Description
 ------------------------|--------------------------------
-`git fetch [<remote>] [<branch>]` | Fetches a specific <branch> or all remote refs
-`git fetch [-u, --set-upstream] [<remote>]` | sets the default remote branch for the current local branch and fetches the branch from remote `-u or --set-upstream` sets  `branch.<name>.remote` and `branch.<name>.merge`
-`git pull [<remote>] [<branch>]` | Fetch the specified remote’s copy of <branch>  or current branch and immediately merge it into the local copy 
-`git pull [-u, --set-upstream] [<remote>]` | sets the default remote branch for the current local branch and pulls the branch from remote
-`git pull [<remote>] [<branch>] [options]` | Fetch the specified remote’s copy of <branch>  or current branch
+`git fetch [<option>]` | fetches a remote repo ***<origin>** if remote *url <origin>*  is set
+`git pull [<option>]` |  pulls a remote repo ***<origin>** if remote *url <origin>*  is set
 options =>           | ..............
-`--rebase` | Fetch the remote’s copy of  <branch> and rebases it into the local copy. Uses git rebase instead of merge to integrate the branches.
-`--no-rebase` | Fetch the remote’s copy of <branch> and merges it into the local
-copy.
+`<remote> <branch>` | Fetches or pulls a specific <branch> or all remote refs <branches>
+` [-u, --set-upstream] <remote>` | sets the default remote branch for the current local branch and fetches the branch from remote `-u or --set-upstream` sets  `branch.<name>.remote` and `branch.<name>.merge`
+`--rebase` | Fetch or pull the remote’s copy of  <branch> and rebases it into the local copy. Uses git rebase instead of merge to integrate the branches.
+`--no-rebase` | Fetch or pull the remote’s copy of <branch> and merges it into the local copy
 
 ### git push 📁💻 ⇢  ⇢ 🌐📁
 commands                |                   Description
 ------------------------|--------------------------------
-`git push [-u, --set-upstream] [<remote>] [<branch>]` | sets the default remote branch for the current local branch and push the branch to remote
-`git push [<remote>] [<branch>] [option]` | Push the branch to <remote>, along with necessary commits and objects (snapshot)
+`git push [options]` | push local branch to remote ***<origin>**
 options =>           | ..............
-`--all` | Push all of your local branches to the specified remote
+`[-u, --set-upstream] <remote> <branch>` | sets the default remote branch for the current local branch and push the branch to remote
+` <remote> <branch> ` | Push the specified branch to <remote>, along with necessary commits and objects (snapshot)
+
+`--all `, `-a` | Push all of your local branches to the specified remote
 `--tags` | Tags aren’t automatically pushed when you push a branch or use the --all flag. The --tags flag sends all of your local tags to the remote repo
-`--force` | Forces the git push even if it results in a ***non-fast-forward merge***
+`--force`, `-f` | Forces the git push even if it results in a ***non-fast-forward merge***
+` <remote> --delete <branch name>` | Delete a remote branch
 
 ### git branch ᛘ
 commands                |                   Description
@@ -69,10 +74,16 @@ options =>       |       .................
 `--set-upstream-to <remote-branch>` | sets the default remote branch for the current local branch
 `git checkout <branch name>` | Switch to a different branch
 `git checkout -b <New branch Name>` | create a local branch if it does not exist in the repository and Switch to it
-`git merge <branch name>` | Try to merge/ the current branch with the specified <branch>
-`git merge <source branch> <target branch> `| Merge the two given branches
-`git rebase <branch name>` | Apply all the commits of the current branch ahead of the specified branch
-`git push origin --delete <branch name>` | Delete a remote branch
+
+### git merge
+commands                |                   Description
+------------------------|--------------------------------
+`git merge <[options]>` | Try to merge branches
+options =>       |       .................
+` --abort`    | throw current merge away and start over
+`<branch name>` | Try to merge/ the current branch with the specified <branch>
+`<source branch> <target branch> `| Merge the two given branches
+
 
 ---------------------------------
 ## Files 📄
@@ -81,11 +92,25 @@ options =>       |       .................
 commands                                           |                   Description
 ---------------------------------------------------|--------------------------------
 `git mv <old_file_name> <new_file_name>`      | Rename file
+
+### git rm 
+commands                                           |                   Description
+---------------------------------------------------|--------------------------------
+`git rm [option]` | remove tracked file or files from working tree (set files to untracked)
+options =>       |       .................
+`<file>`     | remove tracked *<file>*
+`-r`         | recursively removes files and folders
+`--dry-run` | Just show files and folder that will be remove but dont remove any
+
+ ### git diff 🗄δ ／ 📄δ
+commands                                           |                   Description
+---------------------------------------------------|--------------------------------
 `git diff [option]` | Show unstaged changes between your index and working directory
 options =>       |       .................
-`--staged` | see any staged changes
+`--staged` | see any staged changes since last commit
+`<file>`   |  see any changes in file since last commit
 
-### git add 🗄➕📄
+### git add 🗄➕📄δ
 commands                                           |                   Description
 ---------------------------------------------------|--------------------------------
 `git add [options]`              | Add files to stagin area in git
@@ -114,8 +139,15 @@ options =>                            | ...........
 `-a`                       |  add and commit all tracked files
 `--amend`        | modify the most recent commit. Combine staged changes with the previous commit instead of creating an entirely new commit
 
+## git show
+commands                                           |                   Description
+---------------------------------------------------|--------------------------------
+`git show <[options]>` | show details of passed option
+options =>                            | ...........
+`<commit_id>`    |  shows Details of a specific commit
+`<origin>` | 
 
-## git reflog 🗄𝞭
+## git reflog 🗄δ
 
 commands                                           |                   Description
 ---------------------------------------------------|--------------------------------
